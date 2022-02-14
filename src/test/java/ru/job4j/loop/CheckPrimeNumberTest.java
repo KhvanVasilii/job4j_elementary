@@ -27,4 +27,28 @@ public class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(number);
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void when5then3() {
+        int finish = 5;
+        int result = CheckPrimeNumber.calc(finish);
+        int expected = 3;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void when11() {
+        int finish = 11;
+        int result = CheckPrimeNumber.calc(finish);
+        int expected = 5;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void when2() {
+        int finish = 2;
+        int result = CheckPrimeNumber.calc(finish);
+        int expected = 1;
+        Assert.assertEquals(expected, result);
+    }
 }
