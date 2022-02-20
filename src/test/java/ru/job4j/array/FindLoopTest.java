@@ -26,7 +26,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3() {
+    public void whenDiapasonHas2Then3() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 2;
         int start = 2;
@@ -37,18 +37,18 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind2() {
-        int[] data = new int[] {5, 2, 10, 2, 4};
+    public void whenDiapasonHas4Then1() {
+        int[] data = new int[] {5, 2, 10, 2, 4, 1};
         int el = 10;
-        int start = 2;
-        int finish = 4;
+        int start = 1;
+        int finish = 5;
         int result = FindLoop.indexOf(data, el, start, finish);
         int expected = 2;
         Assert.assertEquals(expected, result);
     }
 
     @Test
-    public void whenDidNotFind() {
+    public void whenDiapasonHasNot6ThenMinus1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 6;
         int start = 2;
